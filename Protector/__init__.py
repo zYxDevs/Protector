@@ -48,4 +48,4 @@ def start():
         uvloop.install()
 
     loop = asyncio.new_event_loop()
-    aiorun.run(protector.begin(loop=loop), loop=loop)
+    aiorun.run(Protector.begin(loop=loop), loop=loop)
