@@ -5,7 +5,7 @@ FROM python:3.9-slim-buster
 ENV PATH="${PATH}:/root/.poetry/bin"
 
 # set the working directory in the container
-WORKDIR /protector/
+WORKDIR /Protector/
 
 RUN apt-get -qq update && apt-get -qq upgrade -y
 RUN apt-get -qq install -y --no-install-recommends \
@@ -15,7 +15,7 @@ RUN apt-get -qq install -y --no-install-recommends \
     gnupg2 
 
 # Copy directory and install dependencies
-COPY . /protector
+COPY . /Protector
 RUN pip install --upgrade pip
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 
@@ -23,4 +23,4 @@ RUN poetry config virtualenvs.create false
 RUN poetry install --no-root --no-dev -E uvloop
 
 # command to run on container start
-CMD ["python3","-m","protector"]
+CMD ["python3","-m","Protector"]
