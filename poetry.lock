@@ -169,7 +169,7 @@ colorama = {version = "*", markers = "sys_platform == \"win32\""}
 
 [[package]]
 name = "covid"
-version = "2.5.0"
+version = "2.5.1"
 description = "Python package to get information regarding the novel corona virus provided by Johns Hopkins university and worldometers.info"
 category = "main"
 optional = false
@@ -600,7 +600,7 @@ uvloop = ["uvloop"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "cf89a1f5ca7a8b6067614ea8f439996b2c86abd68ac1ea978f0f415de7075141"
+content-hash = "687ab1665d9614da52e5076ba07531acfa7121c8823ada54dd50d037f2a0bdee"
 
 [metadata.files]
 aiohttp = [
@@ -699,7 +699,7 @@ colorlog = [
     {file = "colorlog-5.0.1.tar.gz", hash = "sha256:f17c013a06962b02f4449ee07cfdbe6b287df29efc2c9a1515b4a376f4e588ea"},
 ]
 covid = [
-    {file = "covid-2.5.0.tar.gz", hash = "sha256:64758f6758eeb3169d370b48f4eb7b9a29cb30c2d25dafe7dcfb65f37d306c21"},
+    {file = "covid-2.5.1.tar.gz", hash = "sha256:b0a287b2738078555eae9a7f5c57e5b44bb39776ae4fb1469601d7ee5bc9ecaa"},
 ]
 distlib = [
     {file = "distlib-0.3.2-py2.py3-none-any.whl", hash = "sha256:23e223426b28491b1ced97dc3bbe183027419dfc7982b4fa2f05d5f3ff10711c"},
